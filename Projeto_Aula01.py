@@ -36,26 +36,35 @@ print(tabela_loja)
 
 grafico = px.bar(tabela_loja, x = tabela_loja.index, y = "Faturamento")
 grafico.show()
+grafico_path = "C:/Python_Modulo-2_Aula01_Murilo/Vendas/grafico.png"
+grafico.write_image(grafico_path)
 
 
+'''
 outlook = win32.Dispatch('outlook.application')
 mail = outlook.CreateItem(0)
 mail.To = 'murilo.santiago05@hotmail.com'
 mail.Subject = 'relatório'
-mail.HTMLBody = f'''
+mail.HTMLBody = 
 
-produtos
+<p>produtos</p>
+{tabela_produtos.to_html()}
 
-faturamento
+<p>faturamento</p>
+{tabela_faturamento.to_html()}
 
-lojas
+<p>lojas</p>
+{tabela_loja.to_html()}
 
-'''
+
+
 
 # To attach a file to the email (optional):
 #attachment  = "Path to the attachment"
 #mail.Attachments.Add(attachment)
 
 mail.Send()
+
+'''
 
 print("E-mail enviado")
