@@ -1,0 +1,21 @@
+CÓDIGO INSERT INTO:
+INSERT INTO TB_FUNCIONARIO(Nome,Idade,Estado,Departamento) VALUES("Robson", 21, "SP", "TI");
+INSERT INTO TB_FUNCIONARIO(Nome,Idade,Estado,Departamento) VALUES("Pedro", 20, "SP", "TI");
+INSERT INTO TB_FUNCIONARIO(Nome,Idade,Estado,Departamento) VALUES("Wellington", 18, "SP", "TI");
+INSERT INTO TB_FUNCIONARIO(Nome,Idade,Estado,Departamento) VALUES("Davi", 17, "MG", "RH");
+INSERT INTO TB_FUNCIONARIO(Nome,Idade,Estado,Departamento) VALUES("Manu", 22, "MG", "RH");
+INSERT INTO TB_FUNCIONARIO(Nome,Idade,Estado,Departamento) VALUES("Murilo", 23, "RJ", "TI");
+INSERT INTO TB_FUNCIONARIO(Nome,Idade,Estado,Departamento) VALUES("Lucas", 28, "RJ", "ADM");
+INSERT INTO TB_FUNCIONARIO(Nome,Idade,Estado,Departamento) VALUES("Carlos", 17, "RJ", "ADM");
+INSERT INTO TB_FUNCIONARIO(Nome,Idade,Estado,Departamento) VALUES("Rodrigo", 27, "RJ", "ADM");
+INSERT INTO TB_FUNCIONARIO(Nome,Idade,Estado,Departamento) VALUES("Jonathan", 16, "RJ", "RH");
+INSERT INTO TB_FUNCIONARIO(Nome,Idade,Estado,Departamento) VALUES("Tais", 29, "RJ", "TI");
+
+CÓDIGO SELECT* FROM NOME DA TABELA
+
+SELECT* FROM NOME DA TABELA
+WHERE Departamento = "TI"
+
+(ATULIZAR) UPDATE NOME DA TABELA
+SET Estado = "MG"
+WHERE ID = 12
